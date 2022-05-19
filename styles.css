@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Hind', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+p, h2{
+    color: #d4cfac;
+}
+
+
+
+/* Title and Nav */
+
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6rem;
+    background-color: black;
+    border-bottom: 1px solid gray;
+    margin-bottom: 0;
+}
+
+.header h2 {
+    margin: auto auto auto 2rem;
+}
+
+.nav {
+    margin: auto 2rem auto auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+.nav a:hover {
+    color: #d4cfac;
+}
+
+@media only screen and (max-width: 480px) {
+    .header h2 {
+        font-size:medium;
+    }
+
+    .nav {
+       font-size: small;
+    }
+}
+/* Banner */
+
+.banner {
+    position: relative;
+    display: inline-flex;
+    margin: 5.6rem 0 0 0;
+    width: 100%;
+    height: 25.5rem;
+    background-image: url(./images/main-banner.jpeg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content:center;
+    align-items: center;
+}
+
+.presentation-text {
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+
+/* Properties */
+
+#properties h2 {
+    text-align: center;
+    padding: 3rem;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.property-container {
+    flex-basis: 33.33%;
+    padding: 1.5rem;
+}
+
+.property-container h3{
+    color: #fff;
+}
+
+.property-container h4{
+    color: #fff;
+}
+
+
+.photo img {
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 770px) {
+    .property-container {
+    flex-basis: 50%;
+    padding: 1.5rem;
+}
+}
+
+@media only screen and (max-width: 400px) {
+    .property-container {
+    flex-basis: 100%;
+    padding: 1.5rem;
+}
+}
+
+/* Agency */
+
+
+
+.sell-with-us {
+    text-align: center;
+    padding: 3rem 0 1.5rem 0;
+    font-size: 1.5rem;
+}
+
+.sell-with-us h3 {
+    color: #d4cfac;
+}
+
+.sell-with-us h4{
+    letter-spacing: 2px;
+    font-style: italic;
+    font-weight: 300;
+    padding-top: 1.5rem;
+}
+
+.sell-with-us p{
+   padding: 0 12.5%;
+   font-size: 1rem;
+}
+
+.agency {
+    padding: 0 12.5%;
+    text-align: justify;
+}
+
+
+.agency p {
+    color: #fff;
+}
+
+.agency-description h2 {
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.market {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.market h3 {
+    padding-top: 1.5rem;
+}
+
+.market p {
+    color: #d4cfac;
+    line-height: 1.5rem;
+}
+
+.market img {
+    width: 33.33%;
+    float: left;
+    padding: 1.5rem 1.5rem .5rem 0;
+}
+
+.market a {
+    margin: 0 auto;
+    padding: 0.75rem;
+    color: #d4cfac;
+    background-color: black;
+    text-decoration: none;
+    border: 1px solid #d4cfac;
+    border-radius: 5px;
+}
+
+.market a:hover {
+    background-color: #d4cfac;
+    color: #fff;
+}
+
+.possibility {
+    display: inline-block;
+}
+
+.possibility h3 {
+    padding-top: 1.5rem;
+}
+
+.possibility p {
+    color: #d4cfac;
+    line-height: 1.5rem;
+}
+
+.possibility img {
+    width: 33.33%;
+    float: right;
+    padding: 1.5rem 0 .5rem 1.5rem;
+}
+
+.button {
+    margin-top: 2rem;
+    padding: 0.75rem;
+
+}
+
+@media only screen and (max-width: 770px) {
+    .img {
+    display: none;
+}
+    .agency {
+    padding: 1.5rem;
+}
+}
+
+/* Agents */
+
+.worldwide {
+    text-align: center;
+    padding: 3rem 0 1.5rem 0;
+}
+
+
+.agents-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem 12.5% 1.5rem 12.5%;
+
+
+}
+
+.agent {
+    display: flex;
+    width: 50%;
+    padding: 1%;
+}
+
+.agent-pic {
+    width: 12rem;
+    height: 12rem;
+}
+
+.agent-description {
+    margin: auto 1.5rem;
+}
+
+.agent-pic img{
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+}
+
+@media only screen and (max-width: 770px) {
+    .agent {
+        width: 50%;
+    }
+    .agent-pic {
+        width: 6rem;
+        height: 6rem;
+    }
+    .agents-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1.5rem;
+    
+    
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .agent {
+        width: 100%;
+    }
+    .agent-pic {
+        width: 6rem;
+        height: 6rem;
+    }
+    .agents-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1.5rem; 
+    }
+}
+
+/* Contacts */
+
+.contact-title {
+    text-align: center;
+    padding: 3rem 0 1.5rem 0;
+}
+
+.contact {
+    display: flex;
+    padding: 1.5rem 5%;
+    justify-content: space-between ;
+}
+
+.contact a {
+    color: #d4cfac;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 770px) {
+    .where {
+        display: none;
+    }
+}
+
+/* Footer */
+
+footer {
+    border-top: 1px solid gray;
+    padding: 1.5rem;
+}
+
+footer h3 {
+    color: #d4cfac;
+}
+footer p {
+    color: #fff;
+}
